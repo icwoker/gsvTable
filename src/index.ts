@@ -1,5 +1,5 @@
-import GsvTable from "./src/tabs.vue";
-import GsvChart from "./src/chart.vue";
+import GsvTable from "./tabs.vue";
+import GsvChart from "./chart.vue";
 
 export { GsvTable, GsvChart };
 
