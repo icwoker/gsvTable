@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, reactive, defineProps } from "vue";
+import { ref, watch, reactive, defineProps, onMounted } from "vue";
 import chart from "./chart.vue";
 import * as parser from "../utils/parser";
 
@@ -312,6 +312,11 @@ watch(
     getText();
   }
 );
+onMounted(() => {
+  if (props.GSVData.length > 0) {
+    getText();
+  }
+});
 </script>
 
 <style scoped>
