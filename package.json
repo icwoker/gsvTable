@@ -1,0 +1,42 @@
+{
+  "name": "gsvtable",
+  "version": "1.0.0",
+  "author": "icwoker",
+  "description": "it's a ui component to show gsv data",
+  "keywords": [
+    "ui component",
+    "gsv data"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icwoker/gsvTable.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/icwoker/gsvTable",
+  "bugs": "https://github.com/icwoker/gsvTable/issues",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "echarts": "^5.5.1",
+    "vue": "^3.5.10"
+  },
+  "devDependencies": {
+    "@types/echarts": "^4.9.22",
+    "@types/vue": "^2.0.0",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.8",
+    "vue-tsc": "^2.1.6"
+  },
+  "peerDependencies": {
+    "@arco-design/web-vue": "^2.56.2"
+  }
+}
